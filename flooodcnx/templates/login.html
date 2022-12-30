@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<head>
+<title>Flood CNX</title>
+<link
+      href="{{ url_for('static', filename='img/floodcnx2.png') }}"
+      rel="icon"
+    />
+    <!--<link rel="stylesheet" type="text/css" href="style.css">-->
+    <!--<script type="text/javascript" src="jss.js"></script>-->
+    <style>
+        body{
+    margin: 0;
+    padding: 0;
+    background: url(back.jpg)no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    font-family: sans-serif;
+}
+
+.box{
+
+
+    background: #f5f5f5;
+    color: red;
+    top: 50%;
+    left: 30%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+
+
+
+.user{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+    color: black;
+}
+
+p{
+    color: #f49126;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+input{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+ input[type="text"], input[type="password"] ,input[type="email"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #673ab7;
+    font-size: 16px;
+}
+.box button{
+
+    color:#fff;
+    
+    font-size: 18px;
+    border-radius: 20px;
+    margin-left:20px;
+    padding-left:70px;
+    padding-right:70px;
+    text-align:center;
+    
+}
+.box button:hover{
+    cursor: pointer;
+    background: #0097a7;
+}
+
+
+
+a
+{
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 20px;
+    color: #069818;
+}
+
+
+a:hover
+{
+    color: red;
+}
+    </style>
+</head>
+<body>
+   <img style="margin-top: 60px; max-height:200px;  margin-left:550px ;" ;
+              
+              src="{{ url_for('static', filename='img/floodcnx2.png') }}"
+              alt=""
+              >
+            
+            <h3 style="margin-left:500px ; padding-top:5px;padding-left:100px; line-height: 40px;">Helping prepare people and their governments, one flood prediction at a time</h3>
+            <br>
+
+
+    <div class="box">
+         <img
+         src="{{ url_for('static', filename='img/user.png') }}"
+         alt=""
+         class="user">
+    
+        <h1>Login Here</h1>
+
+        <form name="myform" onsubmit="return vfun()">
+
+            <p>Username</p>
+            <input type="text" name="uname" placeholder="Enter Username" required="">
+
+            <p>Password</p>
+            <input type="password" name="upswd" placeholder="Enter Password" required="">
+
+             <div class="errorbox"></div>
+            <button><a href="index.html">Login</button></a>
+
+            <br><br>
+            <a href="register.html">Register for new account ?</a>
+
+        </form>
+        
+    </div>
+
+    
+
+</body>
+
+</html>
